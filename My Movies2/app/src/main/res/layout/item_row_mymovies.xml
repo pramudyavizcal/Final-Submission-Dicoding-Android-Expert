@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gradienback">
+
+    <ImageView
+        android:id="@+id/posterFilm"
+        android:layout_width="0dp"
+        android:layout_height="240dp"
+        android:layout_margin="3dp"
+        android:contentDescription="posterfilm"
+        android:src="@color/colorAccent"
+        android:tint="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/keepfaith"
+        android:textColor="#ecfc03"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/posterFilm"
+        app:layout_constraintTop_toTopOf="@+id/posterFilm"
+        tools:text="@string/title_mymovies" />
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/keepfaith"
+        android:maxLines="4"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/posterFilm"
+        app:layout_constraintTop_toBottomOf="@+id/txt_judul"
+        tools:text="@string/overview_mymovies" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="iconcalendar"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="0dp"
+        android:src="@drawable/calendar"
+        android:textAlignment="center"
+        android:tint="#ecfc03"
+        app:layout_constraintBottom_toTopOf="@+id/tanggalRilis"
+        app:layout_constraintEnd_toEndOf="@+id/tanggalRilis"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <TextView
+        android:id="@+id/tanggalRilis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/keepfaith"
+        android:maxLines="1"
+        android:padding="1dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/imageView"
+        tools:text="@string/release_mymovies" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="iconstar"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:padding="0dp"
+        android:src="@drawable/star"
+        android:textAlignment="center"
+        android:tint="#ecfc03"
+        app:layout_constraintBottom_toTopOf="@+id/skorPengunjung"
+        app:layout_constraintEnd_toEndOf="@+id/posterFilm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/skorPengunjung" />
+
+    <TextView
+        android:id="@+id/skorPengunjung"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="7dp"
+        android:fontFamily="@font/keepfaith"
+        android:padding="1dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/posterFilm"
+        app:layout_constraintLeft_toRightOf="parent"
+        tools:text="@string/vote_mymovies" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

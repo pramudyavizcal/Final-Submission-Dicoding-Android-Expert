@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">My Movies</string>
+
+    <!--Movies-->
+    <string name="title_mymovies">Judul</string>
+    <string name="overview_mymovies">Deskripsi</string>
+    <string name="release_mymovies">Rilis</string>
+    <string name="vote_mymovies">Pilihan</string>
+
+    <!--Tv Show-->
+    <string name="name_mytv" >Nama</string>
+    <string name="overview_mytv" >Deskripsi</string>
+    <string name="release_mytv" >Rilis</string>
+    <string name="vote_mytv" >Pilihan</string>
+
+    <!--  Favorit  -->
+    <string name="favorit">Ditambahkan ke Favorit</string>
+    <string name="unfavorit">Dihapus dari Favorit</string>
+    <string name="failedfavorit">Gagal ditambahkan ke Favorit</string>
+
+    <string name="navigationMovies" >Film</string>
+    <string name="navigationTV" >TV</string>
+    <string name="navigationFavorit">Favorit</string>
+    <string name="changeLanguage" >Terjemahkan</string>
+    <string name="settings">Pengaturan</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Reminder -->
+    <string name="daily_reminder">Pengingat Harian</string>
+    <string name="release_reminder">Pengingat Rilis</string>
+    <string name="attachment_summary_release_off">Pengingat Apa yang baru hari ini</string>
+    <string name="attachment_summary_daily_off">Pengingat untuk kembali ke MyMovies</string>
+
+</resources>

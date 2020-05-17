@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradienback"
+    tools:context=".TV.MyTVDetail">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/posterTV"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginBottom="10dp"
+            android:src="@color/colorPrimary"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            android:contentDescription="picdetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/keepfaith"
+            android:paddingTop="2dp"
+            android:text="@string/name_mytv"
+            android:textColor="#ecfc03"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txt_judul"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/posterTV" />
+
+        <TextView
+            android:id="@+id/txt_judul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/keepfaith"
+            android:text="@string/name_mytv"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/keepfaith"
+            android:paddingTop="25dp"
+            android:text="@string/release_mytv"
+            android:textColor="#ecfc03"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/statusTV"
+            app:layout_constraintStart_toStartOf="@+id/txt_judul"
+            app:layout_constraintTop_toBottomOf="@+id/txt_judul" />
+
+        <TextView
+            android:id="@+id/statusTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/keepfaith"
+            android:text="@string/release_mytv"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="33dp"
+            android:fontFamily="@font/keepfaith"
+            android:paddingTop="25dp"
+            android:text="@string/vote_mytv"
+            android:textColor="#ecfc03"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/overview"
+            app:layout_constraintStart_toStartOf="@+id/statusTV"
+            app:layout_constraintTop_toBottomOf="@+id/statusTV" />
+
+        <TextView
+            android:id="@+id/skorPengunjung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/keepfaith"
+            android:text="@string/vote_mytv"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="@+id/textView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradienback"
+            android:fontFamily="@font/keepfaith"
+            android:padding="15dp"
+            android:text="@string/overview_mytv"
+            android:textAlignment="center"
+            android:textColor="#ecfc03"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/overview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/skorPengunjung" />
+
+        <TextView
+            android:id="@+id/overview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/keepfaith"
+            android:padding="20dp"
+            android:text="@string/overview_mytv"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/posterTV"
+            app:layout_constraintEnd_toEndOf="@+id/posterTV"
+            app:layout_constraintStart_toStartOf="@+id/posterTV"
+            app:layout_constraintTop_toTopOf="@+id/txt_judul" />
+
+        <ImageButton
+            android:id="@+id/btnfav"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/overview"
+            android:layout_marginBottom="50dp"
+            android:outlineProvider="bounds"
+            android:src="@drawable/iconfav"
+            android:backgroundTint="@color/transparentback"
+            android:tint="@color/white"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
